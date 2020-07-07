@@ -1,0 +1,17 @@
+article p{
+    margin: 5px 30px 20px 30px; /*Sup Der Inf Izq*/
+    font-size: 20px;
+    color: #D6761F;
+}
+
+
+article div{
+    margin: 5px 70px 20px 70px; /*Sup Der Inf Izq*/
+}
+
+
+article div video{
+    height: auto;
+    width: 88%;
+}
+

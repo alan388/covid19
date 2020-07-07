@@ -1,0 +1,178 @@
+body {
+    font-family: georgia, times, fantasy;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+        
+}
+
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3em; 
+}
+
+
+p{
+    margin-bottom: 1.6em;
+    
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    
+}
+.header {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+}
+.header a{ 
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.4em;    
+}
+
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+  .navigation ul li{
+    display: inline-block;
+  }
+    .navigation ul li a{
+      display: block;
+      padding: 0.5rem 1rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+        .navigation ul li a:hover {
+            background: #4a4a4a;
+        }
+
+.main{
+    padding-top: 10rem;
+    
+}
+.footer{
+    background: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+    margin: 6rem;
+}
+@media only screen and (max-width: 767px){
+    
+        
+    
+    .navigation   {
+        width:100%;
+        margin-top: 1rem;
+        
+    }
+ 
+        .navigation ul li{
+        display: block;
+        }
+            .navigation ul li a{
+            display: block;
+            padding: 0.5rem 0;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+            }
+                .navigation ul li a:hover {
+                background: #4a4a4a;
+                }   
+}
+#imgSize40 {
+    display: block;
+    margin: 5px auto;
+    border-radius: 7px;
+    border: 1px solid #999;
+    padding: 10px;
+    width: 40%;
+    height: 40%;
+}
+
+
+.imgFlotante {
+    display: block;
+    border-radius: 7px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+
+.imgFlotanteIzq {
+    float: left;
+    margin: 5px 10px 0px 0px;  /*Sup Der Inf Izq*/
+    width: 25%;
+    height: 25%;
+}
+
+
+.imgFlotanteDer {
+    float: right;
+    margin: 5px 0px 0px 10px;  /*Sup Der Inf Izq*/
+    width: 30%;
+    height: 30%;
+}
+figure figcaption {
+    font-family: "Constantia", serif;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+aside {
+    float: right;
+    width: 230px;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+
+aside p {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 15px 0px 25px 0px;  /*Sup Der Inf Izq*/
+    padding: 15px 15px 15px 15px;  /*Sup Der Inf Izq*/
+    background: #808080;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
