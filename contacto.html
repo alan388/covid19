@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Estructura de HTML5">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, Python">
+    <title>Covid-19 Bolivia</title>
+    
+   
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/configuracion_contenido.css">
+    <link rel="stylesheet" href="css/contactenos.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/jquery.expander.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //configure de la siguiente manera $('div.expandable p').expander();
+            $('div.expandable p').expander({
+                slicePoint: 110,  //si eliminamos por defecto es 100 caracteres
+                expandText: '[...]',  //por defecto es 'read more...'
+                expandPrefix: '&nbsp;&nbsp;', //valor de espacio por defecto es '&hellip;'
+                //collapseTimer: 5000,  //tiempo en ms para cerrar la expanción automáticamente
+                collapseTimer: 0,  //0: No se cierra mientras el usuario no lo haga
+                userCollapseText: '&nbsp;[^]'  //por defecto es 'read less...'
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    
+<div id="marco_principal">
+    
+    <header class="header">
+            <div class="container logo-nav-container">
+                <a href="#" class="logo">EYES</a>
+                <nav class="navigation">
+                     <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="mision-y-vision.html">Mision y vision</a></li>
+                        <li><a href="fotos.html">Imagenes</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="musica.html">Audios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>   
+            </div> 
+        </header>
+
+    
+    <section>
+        <article > 
+            <p></p><p></p><p></p><p></p><p></p><p></p>
+            <p>
+                Escriba un email y pongasé en contacto con Eyes.Net - Consultoría Informática:
+            </p>
+            
+			<div>
+				<form method="post" action="preparar_email.php">
+                    
+                    <div class="sangriaIzqFormulario">
+                        <input type="text" 
+                            class="form-control"
+                            placeholder="Nombre completo"
+                            name="txtNombre"
+                            required data-validation-required-message="Escriba su nombre">
+                    </div>
+
+                    <div class="sangriaIzqFormulario">
+                        <input type="email" 
+                            class="form-control"
+                            placeholder="Correo" 
+                            name="txtEmail"
+                            required data-validation-required-message="Escriba su email">
+                    </div>
+
+                    <div class="sangriaIzqFormulario">
+                        <textarea rows="6" cols="100%"
+                            class="form-control"
+                            placeholder="Mensaje"
+                            name="txtMensaje"
+                            required data-validation-required-message="Escriba el mensaje" minlength="10" 
+                            data-validation-minlength-message="Escriba como mínimo 4 palabras" 
+                            maxlength="999" style="resize: none" >
+                        </textarea>
+                    </div>
+
+                    <div class="sangriaIzqFormulario">
+                        <button type="reset" class="btn btn-primary pull-right margenBoton" >Limpiar</button>
+                        <button type="submit" class="btn btn-success pull-right margenBoton">Enviar</button><br>
+                    </div>
+
+				</form>
+			</div>
+        </article>
+    </section>    
+
+    <section>
+        <article>
+            <p>
+                <b>EYES.NET - INFORMACIONES O CONSULTAS</b>
+            </p>
+            
+            <div class="expandable">
+                <p>
+                    <b>EYES.NET</b><br>
+                    EYES.NET somos un grupo de investigacion para proporcionar informacion certera de la pandemia.
+                </p>
+            </div>      
+            
+            <p class="sangriaIzqParrafo">
+                <b>MISIÓN:</b><br>
+                Informar a la poblacion en general sobre esta pandemia, el cuidado y prevencion que deben tener durante el tiempo que dure el Covid-19.
+            </p>
+            <p class="sangriaIzqParrafo">
+                <b>VISIÓN:</b><br>
+                Lograr que esta informacion llegue a todas las personas y estas le den un buen uso para disminuir los casos en el pais y en el departamento de Santa Cruz.
+            </p>
+            <p class="sangriaIzqParrafo">
+                <b>LEMA:</b><br>
+                La tecnologia se alimenta asi mismo, la tecnologia hace posible mas tecnologia.
+            </p>
+        
+        </article>
+    </section>
+    
+    <foother id="pie_principal">
+        Derechos reservados Eyes.Net &copy; 2020
+    </foother>
+    
+</div>
+
+</body>
+
+</html>
